@@ -100,6 +100,16 @@ body {
     text-align: center;
     font-size: 2.25em;
     margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.sobre h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #252525;
+    margin: 10px auto;
 }
 
 .sobre_item {
@@ -209,4 +219,55 @@ body {
     text-align: center;
     padding: 15px 0;
     margin: 20px auto 0 auto;
+}
+
+/* LOCAIS */
+
+.locais {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.locais_itens {
+    margin: 60px auto;
+}
+
+.locais_itens::after, .locais_itens::before {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.locais_itens img{
+    width: 460px;
+    float: left;
+    display: block;
+    margin: 0 10px;
+}
+
+.locais_info {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.locais_itens h2 {
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.locais_itens p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+
+.locais_itens a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
 }
